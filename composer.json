@@ -29,10 +29,7 @@
     },
     "scripts": {
         "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "cp -a vendor/swagger-api/swagger-ui/dist public/swagger-ui-assets",
-            "php artisan swagger-lume:publish",
-            "php artisan swagger-lume:generate"
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
     },
     "config": {
